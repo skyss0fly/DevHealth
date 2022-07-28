@@ -13,19 +13,19 @@ class Main extends PluginBase{
 	
 	public function onLoad(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_BLUE . "DevHealthPM4 Has Successfully loaded");
+			$this->getLogger()->info(TextFormat::ORANGE . "DevHealthPM4 Has Successfully loaded");
 		}
 	}
 	
 	public function onEnable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_GREEN . "Make sure to Take breaks when developing!");
+			$this->getLogger()->info(TextFormat::CYAN . "Make sure to Take breaks when developing!");
 		}
 	}
 	
 	public function onDisable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_RED . "Goodbye!!");
+			$this->getLogger()->info(TextFormat::BLUE . "Goodbye!!");
 		}
 	}
 }
