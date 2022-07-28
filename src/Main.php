@@ -13,13 +13,13 @@ class Main extends PluginBase{
 	
 	public function onLoad(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::ORANGE . "DevHealthPM4 Has Successfully loaded");
+			$this->getLogger()->info(TextFormat::GOLD . "DevHealthPM4 Has Successfully loaded");
 		}
 	}
 	
 	public function onEnable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::CYAN . "Make sure to Take breaks when developing!");
+			$this->getLogger()->info(TextFormat::AQUA . "Make sure to Take breaks when developing!");
 		}
 	}
 	
