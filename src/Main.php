@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace skyss0fly\DevHealthPM4;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\plugin\TextFormat;
+use pocketmine\utils\TextFormat;
 
 class Main extends PluginBase{
 	
