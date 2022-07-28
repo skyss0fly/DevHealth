@@ -19,7 +19,7 @@ class Main extends PluginBase{
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Make sure to Take breaks when developing!");
         }
- private function onDisable(): void
+function onDisable(): void
      }
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_RED . "Goodbye!!");
