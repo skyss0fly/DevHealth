@@ -1,0 +1,3 @@
+**To simply downpatch this plugin** Go to: 
+**plugin.yml** and change the API version to your desired API, 
+**PLUGIN DOES NOT WORK UNDER POCKETMINE 4.0.0!!**
