@@ -6,6 +6,8 @@ namespace skyss0fly\DevHealthPM4;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
+use pocketmine\timings\TimingsHandler;
+
 
 class Main extends PluginBase{
 	
@@ -29,3 +31,8 @@ class Main extends PluginBase{
 		}
 	}
 }
+
+//class Timing extends TimingsHandler {
+
+//this->getLogger()->info(TextFormat::Aqua . "Have you recently took a break?");
+// }
