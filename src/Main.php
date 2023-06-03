@@ -14,7 +14,6 @@ class Main extends PluginBase{
 	private bool $debugMode = true;
 	
 	public function onLoad(): void {
-		if ($this->debugMode) {
 			$this->getLogger()->info(TextFormat::GOLD . "DevHealth Has Successfully loaded");
 		
 	}
