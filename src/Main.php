@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\timings\TimingsHandler;
 use pocketmine\server;
-
+use php\sleep;
 class Main extends PluginBase{
 	
 	private bool $debugMode = true;
