@@ -1,7 +1,0 @@
----
-name: DevHealthPM4
-version: 0.2.5
-main: skyss0fly\DevHealthPM4\Main
-api: 5.0.0
-src-namespace-prefix: skyss0fly\DevHealthPM4
-...
