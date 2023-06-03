@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace skyss0fly\DevHealthPM4;
+namespace skyss0fly\DevHealth;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\timings\TimingsHandler;
-
+use pocketmine\server;
 
 class Main extends PluginBase{
 	
@@ -15,24 +15,25 @@ class Main extends PluginBase{
 	
 	public function onLoad(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::GOLD . "DevHealthPM4 Has Successfully loaded");
-		}
+			$this->getLogger()->info(TextFormat::GOLD . "DevHealth Has Successfully loaded");
+		
 	}
 	
 	public function onEnable(): void {
-		if ($this->debugMode) {
+		
 			$this->getLogger()->info(TextFormat::AQUA . "Make sure to Take breaks when developing!");
-		}
+		
 	}
 	
 	public function onDisable(): void {
-		if ($this->debugMode) {
+		
 			$this->getLogger()->info(TextFormat::BLUE . "Goodbye!!");
-		}
+		
 	}
-}
-
-//class Timing extends TimingsHandler {
-
-//this->getLogger()->info(TextFormat::Aqua . "Have you recently took a break?");
-// }
+        public function timedmessage(): void{
+		do {
+	$this->getServer()->broadcastMessage('Have you recently taken a break?')
+		sleep(300);
+		} while($this->pluginEnabled());
+		
+	}
