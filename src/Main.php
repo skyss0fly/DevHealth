@@ -8,7 +8,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\timings\TimingsHandler;
 use pocketmine\server;
-use php\sleep;
+
 class Main extends PluginBase{
 	
 	private bool $debugMode = true;
@@ -32,7 +32,7 @@ class Main extends PluginBase{
         public function timedmessage(): void{
 		do {
 	$this->getServer()->broadcastMessage('Have you recently taken a break?')
-		sleep(300);
+		wait(300)
 		} while($this->pluginEnabled());
 		
 	}
